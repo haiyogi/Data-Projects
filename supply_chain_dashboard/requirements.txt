@@ -9,4 +9,4 @@ joblib
 pymongo
 python-dotenv
 boto3
-plotly
+scipy
