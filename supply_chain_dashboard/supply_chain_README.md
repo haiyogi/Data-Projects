@@ -4,6 +4,8 @@ An end-to-end supply-chain analytics platform for analysing and predicting late 
 
 The project combines AWS S3 ingestion, Pandas preprocessing, feature engineering, three machine-learning models, MongoDB storage, and a Streamlit dashboard.
 
+Live output : https://haiyogi-data-projects-supply-chain-dashboarddashboardapp-xyknfb.streamlit.app/
+
 ## Project objective
 
 The system identifies historical delivery patterns and predicts whether an order is likely to be delivered late. It also provides interactive analysis by market, shipping mode, customer segment, product category, and time period.
