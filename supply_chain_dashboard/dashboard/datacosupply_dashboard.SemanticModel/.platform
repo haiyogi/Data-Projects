@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "datacosupply_dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7dc2ba8c-8d7a-4f03-bc74-99e19cc3f6cc"
+  }
+}
