@@ -209,3 +209,6 @@ pip install -r requirements.txt
 ## Conclusion
 
 This project provides a complete supply-chain delivery analytics solution using AWS S3, Python-based preprocessing, machine learning, MongoDB, and Streamlit. The platform transforms the DataCo dataset into useful delivery insights and predicts late-delivery risk using Random Forest, XGBoost, and LightGBM. The dashboard supports operational monitoring through interactive visualisations, while MongoDB provides central storage for processed records, predictions, model metrics, and analytical outputs. The modular structure also allows the system to be extended later with new data sources, features, models, and monitoring capabilities.
+
+<img width="2036" height="576" alt="image" src="https://github.com/user-attachments/assets/682a45f9-712f-483c-8571-7649d4847fc5" />
+
