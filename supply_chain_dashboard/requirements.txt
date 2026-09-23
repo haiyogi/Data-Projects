@@ -9,4 +9,3 @@ joblib
 pymongo
 python-dotenv
 boto3
-scipy
