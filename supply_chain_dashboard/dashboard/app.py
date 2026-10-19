@@ -1,6 +1,6 @@
 import sys
 from pathlib import Path
-
+import os
 import pandas as pd
 import streamlit as st
 
@@ -104,7 +104,10 @@ with delay_tab:
 
 with modeling_tab:
     st.subheader("Model Performance")
-    if mongo.check_connection():
+    is_online = os.getenv("IS_ONLINE", "false").lower() == "true"
+    if is_online:
+        st.info("You are viewing this page online. The final results can be viewed in the README note at the very last section after the conclusion.")
+    elif mongo.check_connection():
         metrics = mongo.latest_metrics()
         if metrics:
             metric_rows = [
@@ -122,4 +125,5 @@ with modeling_tab:
         else:
             st.info("No model metrics found. Run `python run_pipeline.py` first.")
     else:
-        st.info("MongoDB is not connected. Start MongoDB and run `python run_pipeline.py` first.")
+        st.info("MongoDB is not connected locally. Start MongoDB and run `python run_pipeline.py` first.\n")
+        
