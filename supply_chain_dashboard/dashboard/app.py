@@ -102,9 +102,14 @@ with delay_tab:
     st.plotly_chart(delay_severity_chart(filtered), use_container_width=True)
     st.plotly_chart(delay_distribution_chart(filtered), use_container_width=True)
 
+try:
+    is_online = st.secrets.get("IS_ONLINE", False)
+except Exception:
+    is_online = os.getenv("IS_ONLINE", "false").lower() == "true"
+    
 with modeling_tab:
     st.subheader("Model Performance")
-    is_online = True
+    is_online = st.info("You are viewing this page online. The final results can be viewed in the README note at the very last section after the conclusion.")
     if is_online:
         st.info("You are viewing this page online. The final results can be viewed in the README note at the very last section after the conclusion.")
     elif mongo.check_connection():
