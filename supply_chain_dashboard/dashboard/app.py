@@ -109,7 +109,6 @@ except Exception:
     
 with modeling_tab:
     st.subheader("Model Performance")
-    is_online = st.info("You are viewing this page online. The final results can be viewed in the README note at the very last section after the conclusion.")
     if is_online:
         st.info("You are viewing this page online. The final results can be viewed in the README note at the very last section after the conclusion.")
     elif mongo.check_connection():
